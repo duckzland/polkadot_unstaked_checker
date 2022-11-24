@@ -1,0 +1,22 @@
+{
+    "scripts": {
+        "build": "pkg index.js -c package.json -o polkadot_unstake_checker -C Brotli",
+        "execute": "node index.js"
+    },
+    "dependencies": {
+        "@polkadot/api": "^9.9.1",
+        "@polkadot/util": "^10.1.13"
+    },
+    "pkg": {
+        "scripts": [
+            "node_modules/**/*.js",
+            "node_modules/@polkadot/**/*.js"
+        ],
+        "assets": "node_modules/**/*",
+        "targets": [
+            "node14-linux",
+            "node14-win"
+        ],
+        "outputPath": "dist"
+    }
+}
