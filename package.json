@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "build": "pkg index.js -c package.json -o polkadot_unstake_checker -C Brotli",
+        "build": "pkg index.js -c package.json -o dist/polkadot_unstake_checker -C Brotli",
         "execute": "node index.js"
     },
     "dependencies": {
